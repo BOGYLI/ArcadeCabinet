@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  arcade-pxt:
+    image: node:latest
+    volumes:
+      - ./pxt-arcade:/app
+    ports:
+      - 8080:8080
+    working_dir: /app
+    command: 
+      - npm install
+      - npm run serve
