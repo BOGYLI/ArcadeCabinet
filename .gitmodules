@@ -1,0 +1,3 @@
+[submodule "ArcadeCabinet"]
+	path = ArcadeCabinet
+	url = https://github.com/BOGYLI/ArcadeCabinet.git
