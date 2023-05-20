@@ -1,0 +1,3 @@
+[submodule "pxt-arcade"]
+	path = pxt-arcade
+	url = https://github.com/BOGYLI/pxt-arcade.git
