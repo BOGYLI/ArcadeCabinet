@@ -9,5 +9,8 @@ services:
       - 8080:8080
     working_dir: /app
     command: 
-      - npm install
-      - npm run serve
+      - /bin/sh
+      - -c
+      - |
+        npm install
+        npm run serve
