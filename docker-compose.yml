@@ -6,11 +6,16 @@ services:
     volumes:
       - ./pxt-arcade:/app
     ports:
-      - 8080:8080
+      - 3233:3233
+      - 3232:3232
     working_dir: /app
     command: 
       - /bin/sh
       - -c
       - |
+        apt update
+        apt -y upgrade
+        apt install -y chromium
+        npm update
         npm install
         npm run serve
