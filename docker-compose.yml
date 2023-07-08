@@ -13,9 +13,6 @@ services:
       - /bin/sh
       - -c
       - |
-        apt update
-        apt -y upgrade
-        apt install -y chromium
-        npm update
+        npm install -g pxt
         npm install
-        npm run serve
+        pxt serve -h 0.0.0.0
